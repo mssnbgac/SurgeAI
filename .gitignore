@@ -1,0 +1,25 @@
+node_modules/
+.env
+cache/
+artifacts/
+typechain-types/
+coverage/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+build/

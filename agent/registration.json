@@ -1,0 +1,54 @@
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "SurgeAI Multi-Strategy Trading Agent",
+  "description": "Autonomous AI trading agent with arbitrage detection, yield optimization, and risk management. Implements ERC-8004 for trustless operation with verifiable performance metrics. Strategies: DEX arbitrage across Uniswap V2/V3, automated yield farming optimization, and portfolio risk management with stop-loss/take-profit automation.",
+  "image": "https://example.com/surge-ai-agent.png",
+  "services": [
+    {
+      "name": "web",
+      "endpoint": "https://surge-ai-agent.example.com/"
+    },
+    {
+      "name": "api",
+      "endpoint": "https://api.surge-ai-agent.example.com/v1"
+    }
+  ],
+  "x402Support": false,
+  "active": true,
+  "registrations": [
+    {
+      "agentId": 1,
+      "agentRegistry": "eip155:84532:0x0000000000000000000000000000000000000000"
+    }
+  ],
+  "supportedTrust": [
+    "reputation",
+    "crypto-economic",
+    "validation"
+  ],
+  "strategies": {
+    "arbitrage": {
+      "enabled": true,
+      "minProfitThreshold": 0.5,
+      "supportedDEXs": ["uniswap_v2", "uniswap_v3"],
+      "maxPositionSize": 1000
+    },
+    "yieldOptimization": {
+      "enabled": true,
+      "supportedProtocols": ["aave", "compound", "uniswap_v3"],
+      "rebalanceThreshold": 0.5
+    },
+    "riskManagement": {
+      "enabled": true,
+      "stopLoss": 5.0,
+      "takeProfit": 10.0,
+      "maxPortfolioRisk": 25.0
+    }
+  },
+  "performance": {
+    "totalTrades": 0,
+    "winRate": 0,
+    "totalProfit": 0,
+    "sharpeRatio": 0
+  }
+}
