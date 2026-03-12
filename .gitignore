@@ -23,3 +23,11 @@ venv/
 # Build
 dist/
 build/
+.next/
+out/
+
+# Deployment artifacts
+deployments/
+
+# Lock files (optional - uncomment if you want to exclude)
+# package-lock.json
